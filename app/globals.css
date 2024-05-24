@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  body {
+    @apply min-h-screen bg-gradient-to-tr from-black to-darkblue font-sans text-[13px] leading-6 tracking-wide text-white antialiased;
+  }
+  footer a {
+    @apply hover:italic;
+  }
+  p {
+    @apply mb-6 text-balance;
+  }
+  p:last-child {
+    @apply mb-0;
+  }
+  :-moz-selection {
+    @apply bg-gray text-white;
+  }
+  ::selection {
+    @apply bg-gray text-white;
+  }
+}
